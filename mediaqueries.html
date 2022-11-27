@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hallo</h1>
+    </div>
+</body>
+
+</html>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightblue;
+        color: white;
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            background-color: green;
+        }
+    }
+
+    /* @media screen and (max-width: 1250px) {
+        .container {
+            background-color: darkred;
+        }
+    } */
+
+    @media print {
+        .container {
+            color: blue;
+            background-color: black;
+        }
+    }
+
+
+    @media screen and (width < 1250px) and (orientation: landscape) {
+        .container {
+            background-color: darkgreen;
+        }
+    }
+</style>

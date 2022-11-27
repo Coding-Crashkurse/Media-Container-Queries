@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In placeat deleniti doloremque reiciendis
+                    corrupti. Adipisci porro itaque eius fugiat, temporibus facilis doloremque a possimus. Illum.</p>
+            </div>
+            <div class="content">
+                <p>Necessitatibus officiis modi laboriosam excepturi cupiditate, a veritatis commodi inventore obcaecati
+                    odit, aspernatur ut quae et ducimus at facere aut eligendi vitae soluta, iure expedita!</p>
+            </div>
+            <div class="content">
+                <p>Dolores, ratione! Omnis quis ducimus, ad alias est nobis! Temporibus dolorum, veniam similique maxime
+                    beatae cum officiis tempora nisi sed expedita! Praesentium ab aspernatur quasi?</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+<style>
+    .container,
+    .wrapper {
+        container-type: inline-size;
+        container-name: my-container;
+        max-width: 1000px;
+    }
+
+    .content {
+        container-type: inline-size;
+        container-name: my-content;
+        max-width: 500px;
+    }
+
+    .wrapper {
+        padding: 50px 150px;
+    }
+
+    @media (width > 600px) {
+        .container p {
+            background-color: red;
+        }
+    }
+
+    @container my-container (width > 600px) {
+        .container p {
+            background-color: green;
+        }
+    }
+
+    @container my-content (width > 80cqw) {
+        .container p {
+            background-color: blue;
+        }
+    }
+</style>
